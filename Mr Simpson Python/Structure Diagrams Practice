@@ -1,0 +1,18 @@
+child_buffet = 2.00
+cake_question = input("Is cake required? (yes or no): ")
+if cake_question == "yes": 
+    cake = 15.00
+else: 
+    cake = 0.00
+no_adults = int(input("How many adults are attending?: "))
+no_children = int(input("How many children are attending?: "))
+for i in range(no_children):
+    input("What are the dietary requirements of each child?: ")
+if no_adults + no_children > 20:
+    venue = 0
+else:
+    venue = 50.00
+cost = (child_buffet*no_children) + cake + venue
+print(cost)
+
+
