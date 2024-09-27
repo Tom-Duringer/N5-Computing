@@ -1,0 +1,12 @@
+number = int(input("unput number 1, 2,3 or 4: "))
+while number <1 or number >4:
+    print("ERROR! Number inputed INVALID")
+    number = int(input("input number 1, 2,3 or 4: "))
+if number == 1:
+    print("View chores")
+elif number == 2:
+    print("Mark chore as completed")
+elif number == 3:
+    print("View completed chores")
+else:
+    print("EXIT")
