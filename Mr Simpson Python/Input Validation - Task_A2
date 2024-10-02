@@ -1,0 +1,6 @@
+name = (input("What is your name?: "))
+age = int(input("What is your age?: "))
+while age < 11 or age > 18:
+    print("Try again")
+    age = int(input("What is your age?: "))
+print(f'{name}you have now got the wonderful chance to enter the talent show!')
