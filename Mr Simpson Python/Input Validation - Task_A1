@@ -1,0 +1,6 @@
+score = int(input("What is your score?: "))
+while score < 0 or score > 100:
+    print("Try again")
+    score = int(input("What is your score?: "))
+print(score)
+
