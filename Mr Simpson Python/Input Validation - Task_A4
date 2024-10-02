@@ -1,0 +1,6 @@
+previous = float (input("Enter your previous meter reading: "))
+current = float (input("Enter your current meter reading: "))
+if previous > current:
+    print("Previous cannot be more then current! Try again:")
+    current = float (input("Enter your current meter reading: "))
+unit = float (input("Enter unit cost: "))
