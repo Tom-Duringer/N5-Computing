@@ -1,0 +1,5 @@
+total = 0 
+for score in range(5):
+    scores = int(input(f"Input your score for {score+1}:"))
+    total = total + scores
+    print(total)

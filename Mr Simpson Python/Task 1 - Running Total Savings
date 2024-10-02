@@ -1,0 +1,6 @@
+total = 0 
+
+for month in range(12):
+    savings = int(input(f"Input your savings for month {month+1}:"))
+    total = total + savings
+    print(total)
