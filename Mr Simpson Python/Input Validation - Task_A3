@@ -1,0 +1,11 @@
+array = []
+clans = ["Stuart","Forbes","Douglas","Gordon"]
+name = (input("What is your name?: "))
+clan = (input("What clan are you in?: "))
+if clan not in clans:
+    print("Invalid clan, please try again")
+    clan = (input("What clan are you in?: "))
+array.append(clan)
+array.append(name)
+print(array)
+
