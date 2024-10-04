@@ -1,0 +1,5 @@
+weight = [123,34,219,111,96]
+total = 0
+for index in range(5):
+    total += weight[index]
+print(total)
