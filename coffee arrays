@@ -1,0 +1,8 @@
+import random
+
+coffee = ['black','cappuccino','latte','flat','white','americano']
+number = random.randint(0,4)
+print(coffee[number])
+
+#for index in range(len(coffee)):
+#   print(coffee[index])
