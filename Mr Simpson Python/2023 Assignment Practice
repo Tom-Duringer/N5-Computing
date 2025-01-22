@@ -1,19 +1,23 @@
-journeyStage = ["A","B","C"]
 startMiles = int(input("What is the vehicle mileage at the start of your journey?: "))
 no_stations = int(input("How many stations are you visiting during your journey?: "))
 
 for charging in range(no_stations):
     current_m = int(input("What is the vehicle mileage at current station?: "))
     rating = int(input("What is the Kw rating for the charger?: "))
-    if rating = 7:
+    while rating != 7 and rating != 22 and rating != 50:
+        print("ERROR DETECTED! Invalid Kilowatt rating. Rating must be 7, 22 or 50.")
+    rating = int(input("What is the Kw rating for the charger?: "))
+    if rating == 7:
         pricePerMile = 0
-    elif rating = 22:
+    elif rating == 22:
         pricePerMile = 0.005
-    elif rating = 50:
+    else: 
         pricePerMile = 0.01
     milesTravelled = current_m - startMiles
     startMiles = current_m 
     cost_journeyStage = pricePerMile*milesTravelled
-    
-
-
+    totalJourneycost = cost_journeyStage + totalJourneycost
+    totalMiles = totalMiles + milesTravelled
+totalJourneycost = round(totalJourneycost,2)
+print("The total cost of the journey is: £"totalJourneycost)
+print("The total miles travelled is:" totalMiles)
